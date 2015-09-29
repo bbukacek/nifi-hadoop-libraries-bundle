@@ -17,11 +17,11 @@ When using the HDFS related processors a configuration neccessary is supplying t
 
 Get the core-site.xml from the MapR environment, make the file readable by the user running NiFi and modify the contents to include the fs.defaultFS property. The cldbhost and port will come from the MapR environment.
 
-
+```
 <property> 
   <name>fs.defaultFS</name>
   <value>maprfs://<cldbhost>:<port></value>
 </property>
-
+```
 
 Once completed, NiFi will be able to communicated with a MapR cluster.
