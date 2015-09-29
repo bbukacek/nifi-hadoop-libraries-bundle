@@ -28,4 +28,4 @@ Get the **core-site.xml** from the MapR environment, make the file readable by t
 ...
 ```
 
-Once completed, NiFi will be able to communicated with a MapR cluster.
+Once completed, the HDFS processors in NiFi will be able to communicate with a MapR cluster.
