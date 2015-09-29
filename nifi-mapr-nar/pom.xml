@@ -28,12 +28,16 @@
     <parent>
         <groupId>org.apache.nifi</groupId>
         <artifactId>nifi-hadoop-libraries-bundle</artifactId>
-        <version>0.2.1</version>
+        <version>0.3.0</version>
     </parent>
 
     <artifactId>nifi-hadoop-libraries-nar</artifactId>
-    <version>0.2.1</version>
+    <version>0.3.0</version>
     <packaging>nar</packaging>
+
+    <properties>
+	<mapr.version>2.5.1-mapr-1503</mapr.version>
+    </properties>
 
     <dependencies>
 <dependency>
@@ -44,32 +48,32 @@
            <dependency>
                <groupId>org.apache.hadoop</groupId>
                <artifactId>hadoop-common</artifactId>
-	       <version>2.7.0-mapr-1506</version>
+	       <version>${mapr.version}</version>
            </dependency>
            <dependency>
                <groupId>org.apache.hadoop</groupId>
                <artifactId>hadoop-hdfs</artifactId>
-	       <version>2.7.0-mapr-1506</version>
+	       <version>${mapr.version}</version>
            </dependency>
            <dependency>
                <groupId>org.apache.hadoop</groupId>
                <artifactId>hadoop-yarn-api</artifactId>
-	       <version>2.7.0-mapr-1506</version>
+	       <version>${mapr.version}</version>
            </dependency>
            <dependency>
                <groupId>org.apache.hadoop</groupId>
                <artifactId>hadoop-mapreduce-client-core</artifactId>
-	       <version>2.7.0-mapr-1506</version>
+	       <version>${mapr.version}</version>
            </dependency>
            <dependency>
                <groupId>org.apache.hadoop</groupId>
                <artifactId>hadoop-annotations</artifactId>
-	       <version>2.7.0-mapr-1506</version>
+	       <version>${mapr.version}</version>
            </dependency>
            <dependency>
                <groupId>org.apache.hadoop</groupId>
                <artifactId>hadoop-client</artifactId>
-               <version>2.7.0-mapr-1506</version>
+               <version>${mapr.version}</version>
            </dependency>
            <dependency>
                <groupId>org.apache.avro</groupId>
